@@ -25,6 +25,7 @@ ClassLoader::addClasses(array
 (
 	// Classes
 	'Polls\Poll' => 'system/modules/polls/classes/Poll.php',
+	'Polls\AbstractPoll' => 'system/modules/polls/classes/AbstractPoll.php',
 
 	// Content elements
 	'Polls\ContentPoll' => 'system/modules/polls/elements/ContentPoll.php',

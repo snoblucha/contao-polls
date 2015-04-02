@@ -83,8 +83,11 @@ class ContentPoll extends \Module
 			$this->Template->poll = '';
 			return;
 		}
-
-		$objPoll = new \Poll($intPoll);
+		$poll = $this->Database->prepare("SELECT * FROM tl_poll WHERE id=?")
+		                       ->limit(1)->execute($intPoll);
+		$poll->first();
+		$class = $poll->poll_type ? str_replace('/','\\',$poll->poll_type) : '\Poll';
+		$objPoll = new $class($intPoll);
 		$this->Template->poll = $objPoll->generate();
 	}
 }

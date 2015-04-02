@@ -58,3 +58,6 @@ $GLOBALS['TL_CTE']['includes']['poll'] = 'ContentPoll';
 $GLOBALS['TL_MODELS']['tl_poll']        = 'PollModel';
 $GLOBALS['TL_MODELS']['tl_poll_option'] = 'PollOptionModel';
 $GLOBALS['TL_MODELS']['tl_poll_votes']  = 'PollVotesModel';
+
+
+$GLOBALS['TL_FFL']['poll'] = '\Polls\Poll';
