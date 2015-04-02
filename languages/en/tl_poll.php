@@ -11,11 +11,13 @@
  * @license LGPL
  */
 
+$GLOBALS['TL_LANG']['tl_poll']['default_class']  = 'Default: Only text';
 
 /**
  * Fields
  */
 $GLOBALS['TL_LANG']['tl_poll']['title']                     = array('Title', 'Please enter the poll title.');
+$GLOBALS['TL_LANG']['tl_poll']['poll_type']                 = array('How to display poll', 'Here you can set upt the type of the poll.');
 $GLOBALS['TL_LANG']['tl_poll']['type']                      = array('Type', 'Here you can choose the poll type.');
 $GLOBALS['TL_LANG']['tl_poll']['voteInterval']              = array('Vote interval', 'Here you can set the time value in seconds before a user can vote again. Set to 0 if vote can be made only once.');
 $GLOBALS['TL_LANG']['tl_poll']['protected']                 = array('Protected poll', 'Only the logged in users will be able to vote.');

@@ -12,6 +12,7 @@
  * @license LGPL
  */
 
+$GLOBALS['TL_LANG']['tl_poll']['default_class']  = 'Default: Only text';
 
 /**
  * Fields

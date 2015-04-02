@@ -159,7 +159,7 @@ $GLOBALS['TL_DCA']['tl_poll'] = array
 
 			'eval' => array( 'mandatory' => true, 'maxlength' => 255 ),
 			'sql' => "varchar(255) NOT NULL default '/Polls/Poll'",
-			'options' => array( '/Polls/Poll' => 'default', ),
+			'options' => array( '/Polls/Poll' => $GLOBALS['TL_LANG']['tl_poll']['default_class'], ),
 		),
 		'type' => array
 		(
