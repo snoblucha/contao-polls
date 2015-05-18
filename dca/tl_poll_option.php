@@ -162,7 +162,7 @@ $GLOBALS['TL_DCA']['tl_poll_option'] = array
 /**
  * Provide support for DC_Multilingual
  */
-if (\Poll::checkMultilingual())
+if (\Polls\Poll::checkMultilingual())
 {
 	$GLOBALS['TL_DCA']['tl_poll_option']['config']['dataContainer'] = 'Multilingual';
 	$GLOBALS['TL_DCA']['tl_poll_option']['config']['languages'] = Poll::getAvailableLanguages();

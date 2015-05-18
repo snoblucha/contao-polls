@@ -54,7 +54,7 @@ class tl_content_poll extends Backend
 	public function getPolls()
 	{
 		$arrPolls = array();
-		$objPolls = $this->Database->execute("SELECT id, title FROM tl_poll" . (\Poll::checkMultilingual() ? " WHERE lid=0" : "") . " ORDER BY title");
+		$objPolls = $this->Database->execute("SELECT id, title FROM tl_poll" . (\Polls\Poll::checkMultilingual() ? " WHERE lid=0" : "") . " ORDER BY title");
 
 		while ($objPolls->next())
 		{
